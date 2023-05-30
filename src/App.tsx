@@ -56,7 +56,7 @@ function App() {
   }, []);
 
   return (
-    <div className='w-full h-auto md:h-screen bg-bigLight dark:bg-bigDark'>
+    <div className='w-full h-[40rem] md:h-screen bg-bigLight dark:bg-bigDark'>
       <Navbar />
       <Search
         handleSubmit={handleSubmit}

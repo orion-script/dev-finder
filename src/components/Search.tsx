@@ -32,7 +32,7 @@ const Search: React.FC<Props> = ({ handleSubmit, handleType, isError }) => {
         {isError && (
           <div
             role="alert"
-            className="text-center text-xl mt-3"
+            className="text-center text-lg mt-1 text-gray-900 dark:text-white"
           >
             Please Search a Correct Github User
           </div>

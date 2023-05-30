@@ -61,12 +61,12 @@ const OptionalInfo: React.FC<Props> = ({ user, info }) => {
         <a
           id={info}
           href={displayText}
-          className="block md:truncate focus:underline group-hover:underline"
+          className="block truncate focus:underline group-hover:underline"
         >
           {displayText}
         </a>
       ) : (
-        <div id={info} aria-label={info} className="md:truncate">
+        <div id={info} aria-label={info} className="truncate">
           {displayText}
         </div>
       )}
