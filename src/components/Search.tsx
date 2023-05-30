@@ -14,7 +14,8 @@ type Props = {
 
 const Search: React.FC<Props> = ({ handleSubmit, handleType, isError }) => {
   return (
-    <div className="flex w-4/5 md:w-3/5 m-auto mt-10">
+    <div className="w-4/5 md:w-3/5 m-auto mt-10">
+        <div className="flex w-full">
         <input
           id="search"
           type="text"
@@ -23,17 +24,20 @@ const Search: React.FC<Props> = ({ handleSubmit, handleType, isError }) => {
           onChange={handleType}
           onKeyDown={handleSubmit}
         />
-        {isError && (
-          <div
-            role="alert"
-            className=""
-          >
-            No results
-          </div>
-        )}
         <span className='bg-[#ffffff] dark:bg-[#1e2c48] h-14 pt-2 rounded-r-lg'>
             <Button handleClick={handleSubmit} />
         </span>
+        </div>
+
+        {isError && (
+          <div
+            role="alert"
+            className="text-center text-xl mt-3"
+          >
+            Please Search a Correct Github User
+          </div>
+        )}
+
     </div>
   );
 };

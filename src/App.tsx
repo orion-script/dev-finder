@@ -55,9 +55,6 @@ function App() {
       .then((res) => setUser(res.data));
   }, []);
 
-  console.log(user)
-  console.log(isError)
-
   return (
     <div className='w-full h-auto md:h-screen bg-bigLight dark:bg-bigDark'>
       <Navbar />
