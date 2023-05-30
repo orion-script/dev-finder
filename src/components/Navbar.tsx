@@ -1,9 +1,9 @@
-// import React from 'react'
+import React from 'react'
 import { useState, useEffect } from "react";
 import Moon from "../assets/icon-moon.svg";
 import Sun from "../assets/icon-sun.svg";
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
 
     const [theme, setTheme] = useState(localStorage.getItem("theme"));
     
